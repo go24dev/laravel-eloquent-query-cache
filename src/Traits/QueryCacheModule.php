@@ -208,7 +208,7 @@ trait QueryCacheModule
      */
     public function cacheForever()
     {
-        return $this->cacheFor(-1);
+        return $this->cacheFor(config('cache.rennokki.forever', -1));
     }
 
     /**
